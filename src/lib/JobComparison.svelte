@@ -5,11 +5,14 @@ import { monthNames } from "./utils";
 export let ofJob = null;
 export let withJob = null;
 export let compareTill; 
+export let growTill = new Date();
+export let growth = 0;
+export let inflation = 0;
 
 const computeFor = []
 for(let date = new Date(); date < compareTill; date.setMonth(date.getMonth() + 1)) computeFor.push(new Date(date))
 
-$: data = computeFor.map(date => [date, computeForDate({date: new Date(date), compareTill, oldJob: withJob, newJob: ofJob})])
+$: data = computeFor.map(date => [date, computeForDate({growTill, growth, inflation, date: new Date(date), compareTill, oldJob: withJob, newJob: ofJob})])
   
 </script>
   

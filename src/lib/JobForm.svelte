@@ -5,6 +5,9 @@ import JobComparison from "./JobComparison.svelte";
 export let key;
 export let close = () => {};
 export let compareTill;
+export let growTill = new Date();
+export let growth = 0;
+export let inflation = 0;
 export let primary = false;
 export let model = {
   name: "",
@@ -43,6 +46,6 @@ export let compareWith = null;
     {/if}
   </div>
   {#if compareWith != null && compareWith.salary && compareWith.tax && compareWith.joiningDate}
-    <JobComparison compareTill={compareTill} ofJob={model} withJob={compareWith} />
+    <JobComparison growTill={growTill} growth={growth} inflation={inflation} compareTill={compareTill} ofJob={model} withJob={compareWith} />
   {/if}
 </div>
