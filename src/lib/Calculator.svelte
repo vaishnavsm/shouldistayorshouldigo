@@ -44,7 +44,7 @@
     {#each company as c (c)}
       <JobForm close={() => {company = company.filter(x => x !== c)}} growth={growth} growTill={new Date(growTill)} inflation={inflation} key={c} compareTill={new Date(compareTill)} compareWith={primaryModel}/>
     {/each}
-    <div on:click={addCompany} class="w-full h-32 md:p-32 hover:cursor-pointer hover:bg-slate-100 flex flex-col justify-around items-center rounded-md border-2 border-gray-200 gap-2">
+    <div on:click={addCompany} class="w-full h-32 md:w-auto md:h-auto md:p-32 hover:cursor-pointer hover:bg-slate-100 flex flex-col justify-around items-center rounded-md border-2 border-gray-200 gap-2">
       <svg height=64 width=64 stroke="#d9d9d9" fill="#d2d2d2" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg>
     </div>
   </div>
