@@ -17,7 +17,7 @@ $: data = computeFor.map(date => [date, computeForDate({growTill, growth, inflat
 </script>
   
 
-{#if ofJob != null && withJob != null}
+{#if ofJob != null && withJob != null && ofJob.salary !== 0 && withJob.salary !== 0}
   <div class="p-2 flex flex-row flex-wrap justify-center items-center gap-2 md:max-w-xl">
     {#each data as point}
     <div class="{point[1] > 0 ? "bg-green-100" : "bg-red-100"} h-12 w-32 mb-4 md:mb-0 rounded-md flex items-center justify-center">

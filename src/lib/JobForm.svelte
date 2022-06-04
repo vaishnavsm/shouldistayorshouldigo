@@ -12,7 +12,7 @@ export let primary = false;
 export let model = {
   name: "",
   salary: undefined,
-  tax: undefined,
+  tax: 0,
   expenses: 0,
   shiftingExpenses: 0,
   bonus: 0,
