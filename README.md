@@ -4,3 +4,7 @@
 
 A fun little site to calculate if a change in job is advantageous for you.
 Just an evening project to get back into flow.
+
+## There are bugs with this!
+
+There are bugs with the calculator, but I haven't found them yet. If you find any, please raise an issue and/or raise a PR adding a test to `compare.test.js`
