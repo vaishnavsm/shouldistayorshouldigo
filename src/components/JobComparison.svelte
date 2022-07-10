@@ -1,6 +1,6 @@
 <script>
-import { computeForDate } from "./compare";
-import { monthNames } from "./utils";
+import { computeForDate } from "../lib/compare";
+import { monthNames } from "../lib/utils";
 
 export let ofJob = null;
 export let withJob = null;

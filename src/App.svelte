@@ -1,6 +1,6 @@
 <script>
   import './global.css'
-  import Calculator from './lib/Calculator.svelte';
+  import Calculator from './components/Calculator.svelte';
 </script>
 
 <main class="flex-1 p-4 flex flex-col justify-around items-center">

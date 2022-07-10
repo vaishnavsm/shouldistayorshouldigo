@@ -1,7 +1,7 @@
 <script>
   import Input from './Input.svelte';
   import JobForm from './JobForm.svelte';
-  import { formatDate } from './utils';
+  import { formatDate } from '../lib/utils';
   let primaryModel;
   let compareTillInit = new Date();
   compareTillInit.setFullYear(new Date().getFullYear() + 1);
